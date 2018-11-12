@@ -1,0 +1,15 @@
+{
+    "short_name": "BekalSiap",
+    "name": "BekalSiap",
+    "icons": [
+      {
+        "src":"https://res.cloudinary.com/bekalsiap/image/upload/v1541399651/logo-Bekal.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/?utm_source=homescreen",
+    "background_color": "#fff",
+    "Theme_color": "#536878",
+    "display": "standalone"
+  }
