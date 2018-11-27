@@ -15,7 +15,7 @@ class CustomSlide extends Component {
 
 export class AutismeMenu extends Component {
   render() {
-    const dataMenu = [...this.props.data]
+    const {diet} = this.props.data.data.penyakit
     const settings = {
       dots: false,
       infinite: true,
@@ -26,15 +26,15 @@ export class AutismeMenu extends Component {
     };
     return (
       <div className="ContohMenu">
-        <h2>Rekomendasi Menu</h2>
+        <div className="text">
+           <h2 >Pilihan Diet</h2>
+        </div>
         <Slider {...settings} addOrder={this.props.addOrder}>
-          {dataMenu.map((key, index) => {
-                                 const menu = key.data.penyakit.autisme
-                                 const list = Object.keys(key.data.penyakit.autisme).map((key, index) => {
-                                 return <CustomSlide key={key} details={menu[key]}/>
-                              })
-                              return list
-                              })}
+          {
+            Object.keys(diet).map((key, index) => {
+              return <CustomSlide key={key} details={diet[key]}/>
+           })
+          }
         </Slider>
       </div>
     );

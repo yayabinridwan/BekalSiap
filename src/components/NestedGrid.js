@@ -6,17 +6,18 @@ export default class NestedGrid extends Component {
     
     return(
       <div className="containerGrid" id="kategori">
+        <h3>Penyakit yang diderita</h3>
         <div className="gridItem">
-          <Link to={{pathname: '/langganan/autisme'}}>
+          <Link to={{pathname: '/langganan/diet-gfcf'}}>
             <div className="item" >
-              <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541165438/autism.png" alt="autisme" className="menuItem"/>
-              <p>Autisme</p>
+              <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1542363178/Diet_gfcf.png" alt="autisme" className="menuItem"/>
+              <p>Diet GFCF</p>
             </div>
           </Link>
-          <Link to={{pathname: '/langganan/diabetes'}}>
+          <Link to={{pathname: '/langganan/diet-ketosis'}}>
             <div className="item" id="diabetes">
-            <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541165438/sugar-blood-level.png" alt="diabetes" className="menuItem"/>
-              <p>Diabetes</p>
+            <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1542363182/Diet_keto.png" alt="diabetes" className="menuItem"/>
+              <p>Diet Keto-Fasting</p>
             </div>
           </Link>
           <Link to={{pathname: '/langganan/stroke'}}>
@@ -49,3 +50,4 @@ export default class NestedGrid extends Component {
   }
 }
 
+curl "https://api.edamam.com/api/nutrition-data?app_id=${b9fb9701}&app_key=${393d00998794fd861dbedc9f38cac2d2 	}&ingr=1%20large%20apple"

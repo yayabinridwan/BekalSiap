@@ -13,28 +13,50 @@ class CustomSlide extends Component {
   }
 }
 
-export class DiabetesMenu extends Component {
+class DiabetesMenu extends Component {
   render() {
     const settings = {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 3,
       slidesToScroll: 1,
-      arrows: false
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     };
-    const berlangganan = [...this.props.data]
+    const {paket} = this.props.data.data.subscribe
     return (
       <div>
         <Slider {...settings}>
-        {berlangganan.map((key, index) => {
-                                 const paket = key.data.subscribe.paket
-                                 console.log('paket', key.data.subscribe.paket)
-                                 const paketan = Object.keys(paket).map((key, index) => {
+        {Object.keys(paket).map((key, index) => {
                                    return <CustomSlide key={index} paket={paket[key]}/>
-                                 })
-                                 return paketan
-                              })}
+                                 })}
         </Slider>
       </div>
     );

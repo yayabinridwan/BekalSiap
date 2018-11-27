@@ -1,11 +1,24 @@
 body {
-  background-color: #f9f9f9;
-  overflow-x: hidden;
+  background-color: #efefef;
   font-family: 'Roboto', sans-serif;
 }
 #promo {
   margin-top: 60px;
   background-color: #fff;
+}
+.menu {
+  margin-top: 10px;
+  color: #851480;
+  text-align: center;
+}
+.diet {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: centerf;
+      -ms-flex-pack: centerf;
+          justify-content: centerf;
 }
 .promo {
   margin-top: 5px;
@@ -15,23 +28,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.col3 {
-  width: 50%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-right: auto;
 }
 .col4 {
-  width: 40%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin-left: 200px;
   margin-right: 0;
+  color: #851480;
+}
+.buttonAction {
+  color: #851480;
 }
 .langganan {
   margin-bottom: 60px;
@@ -50,13 +53,15 @@ body {
   background-color: #fff;
   margin-bottom: 20px;
 }
+.text {
+  text-align: center;
+}
 .copyright {
   text-align: center;
 }
 .tentangkami {
   width: 100%;
   height: 100%;
-  padding: 10px;
   padding-top: 30px;
   padding-bottom: 20px;
   display: block;
@@ -81,6 +86,7 @@ body {
 .whyus {
   height: 100%;
   display: block;
+  grid-template-columns: repeat(3, 1fr);
   background-color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -90,6 +96,16 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 20px;
+  margin-top: 10px;
+}
+.redirects {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .menuItem {
   width: 40px;
@@ -123,14 +139,19 @@ body {
   margin-top: 2rem;
   width: 100%;
   height: 30%;
+  text-align: center;
+  color: #851480;
+  background-color: #fff;
+  padding-top: 20px;
 }
 .flex-box {
   display: block;
   height: 100%;
   padding: 5px;
   width: 100%;
-  background: #ffcd00;
-  background: linear-gradient(146deg, #ffcd00 0%, #ff4800 100%);
+  background: #ff4749;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff4749), color-stop(98%, #fc4871));
+  background: linear-gradient(180deg, #ff4749 0%, #fc4871 98%);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -175,4 +196,104 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.listCard {
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  -webkit-box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2);
+          box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-top: 20px;
+  border-color: #851480;
+  border-style: solid;
+  border-width: thin;
+}
+.dietOption {
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+  color: #851480;
+}
+.row1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.avatar {
+  width: 100%;
+  height: 150px;
+}
+button {
+  background-color: #851480;
+  border-style: none;
+  padding: 5px;
+  color: #fff;
+}
+.qrCode {
+  margin-top: 50px;
+  display: block;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #f2ca02;
+  color: #fff;
+}
+.Rekomendasi {
+  background-color: #851480;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2);
+          box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.qrcode {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.cari {
+  background-color: #f2ca02;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.col8 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.RestoPage {
+  margin-top: 60px;
+  margin-bottom: 50px;
 }

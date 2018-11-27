@@ -49,15 +49,14 @@ function ImgMediaCard(props) {
             Rp. {harga.toLocaleString()}
           </Typography>
           <Typography component="p">
-            available
+            Fasilitas
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
+      <h5>Hello</h5>
       <Link to={{pathname: '/order'}}>
-        <Button size="small" color="primary"  onClick={() => props.addOrder(props.paket)}>
-          Pesan Sekarang
-        </Button>
+         <button classNmae="buttonACtion" onClick={() =>  props.addOrder(props.paket)}>Berlangganan Sekarang</button>
       </Link>
       </CardActions>
     </Card>

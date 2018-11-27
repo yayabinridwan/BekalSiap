@@ -1,21 +1,19 @@
 import {NutritionLabel} from 'react-fda-nutrition-facts'
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-
+import SimpleApp from './SimpleApp'
 
 
 class NutritionFact extends Component {
-    render() {
+    render() {/*
         console.log('props', this.props.order)
         const data = this.props.order.map(key => {
             const {name, pic, description, harga} = key
             return {name, pic, description, harga}
-        })
-        console.log(data[0].name)
+        })*/
         return(
             <div>
-              <img src={this.props.order.pic} alt="gambar"/>
-
+              <SimpleApp />
               <NutritionLabel
                 servingSize={'1 cup (228g)'}
                 servingsPerContainer={2}

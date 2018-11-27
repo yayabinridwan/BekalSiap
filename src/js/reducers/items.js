@@ -1,5 +1,6 @@
-import { FETCH_DATA, ADD_ORDER } from "../actions/index";
+import { FETCH_DATA, ADD_ORDER, DETAIL_PRODUK, DETAIL_DIET, FETCH_MENU } from "../actions/index";
 import dataJSON from '../../data/menu.json'
+import menuJSON from '../../data/burjo.json'
 export function itemsHasErrored(state = false, action) {
     switch (action.type) {
         case 'ITEMS_HAS_ERRORED':
@@ -30,12 +31,10 @@ export function items(state = [], action) {
     }
 }
 
-
-
 export function data(state = dataJSON, action){
   switch (action.type) {
     case FETCH_DATA:
-      return [...state, state]
+      return Object.assign({}, dataJSON, menuJSON)
     default:
       return state;
   }
@@ -44,8 +43,25 @@ export function data(state = dataJSON, action){
 export function Order(state = [], action){
     switch (action.type) {
       case ADD_ORDER:
-        const order = [...state, {...action.order}]
-        return order
+         return Object.assign({}, {...action.order})
+      default:
+        return state;
+    }
+  };
+
+export function detail(state = [], action){
+    switch (action.type) {
+      case DETAIL_PRODUK:
+        return Object.assign({}, {...action.detail})
+      default:
+        return state;
+    }
+  };
+
+export function diet(state = [], action){
+    switch (action.type) {
+      case DETAIL_DIET:
+        return Object.assign({}, {...action.detail})
       default:
         return state;
     }

@@ -1,7 +1,58 @@
 {
   "data": {
     "penyakit": {
-      "autisme": {
+      "diet": {
+        "diet-gfcf": {
+          "pic": "https://res.cloudinary.com/bekalsiap/image/upload/v1542363178/Diet_gfcf.png",
+          "name": "Diet GFCF",
+          "description": "Diet GFCF adalah diet yang dilakukan dengan menghilangkan sumber bahan makanan/minuman yang mengandung kasein dan gluten. Penerapan diet GFCF akan memberikan hasil yang maksimal apabila dilakukan sesuai dengan aturannya, secara konsisten, serta dibarengi oleh pengawasan yang ketat.",
+          "totalCal": "133",
+          "harga": 30000
+        },
+        "diet-keto": {
+          "pic": "https://res.cloudinary.com/bekalsiap/image/upload/v1542363182/Diet_keto.png",
+          "name": "Diet Keto",
+          "description": "Diet keto adalah diet yang dilakukan dengan cara menerapkan pola makan rendah karbohidrat dan tinggi lemak. Diet keto kian populer karena disebut-sebut cepat menurunkan berat badan",
+          "totalCal": "133",
+          "harga": 30000
+        },
+        "diet-low-fat": {
+          "pic": "https://res.cloudinary.com/bekalsiap/image/upload/v1542363180/lowfat.png",
+          "name": "Low fat Diet",
+          "description": "diet rendah lemak adalah salah satu pola makan dengan jumlah lemak yang terbatas. Salah satu alasan orang menjalani pola makan ini adalah untuk membantu mengurangi asupan kalori dari lemak dan biasanya untuk memperbaiki kadar kolesterol dan trigliserida darah.",
+          "totalCal": "133",
+          "harga": 30000
+        },
+        "diet-carbo": {
+          "pic": "https://res.cloudinary.com/bekalsiap/image/upload/v1542363180/Diet_carbo.png",
+          "name": "Diet Carbo",
+          "description": "Diet karbohidrat adalah pola makan yang mengurangi asupan karbohidrat atau menghindari makanan yang mengandung karbohidrat tinggi, guna menurunkan berat badan. Contoh makanan berkarbohidrat adalah pasta, roti, beras, sereal, juga buah dan sayur yang mengandung karbohidrat.",
+          "totalCal": "133",
+          "harga": 30000
+        },
+        "diet-paleo": {
+          "pic": "https://res.cloudinary.com/bekalsiap/image/upload/v1542363189/Paleo_diet.png",
+          "name": "Paleo Diet",
+          "description": "Paleo diet atau juga dikenal dengan nama diet manusia purba (caveman diet) adalah diet yang mengadaptasi kebiasaan makan nenek moyang pada zaman dulu. Seperti namanya paleo, diet ini mengikuti kebiasaan diet orang-orang pada masa Paleolitik (sekitar 2,5 juta sampai 10.000 tahun lalu). Tujuan dari diet ini adalah mengembalikan kebiasaan makan manusia seperti manusia zaman dulu. Paleo diet yakin bahwa tubuh manusia lebih cocok dimasuki dengan diet seperti orang-orang zaman dulu (yang mengonsumsi makanan dari hasil berburu dan mengumpulkan) dibandingkan dengan diet modern, di mana terjadi perubahan pada sistem pertanian yang lebih canggih.",
+          "totalCal": "133",
+          "harga": 30000
+        },
+        "diet vegan": {
+          "pic": "https://res.cloudinary.com/bekalsiap/image/upload/v1542363183/vegan.png",
+          "name": "Diet Vegan",
+          "description": "Diet vegan umumnya menghindari konsumsi semua produk hewani, termasuk olahan dari hewan seperti susu, keju, telur, gelatin, madu, dan sebagainya. Sementara diet vegetarian menghindari daging dan produk hewani, tapi beberapa masih mengonsumsi susu, telur, dan madu.",
+          "totalCal": "133",
+          "harga": 30000
+        },
+        "diet-pescetarian": {
+          "pic": "https://res.cloudinary.com/bekalsiap/image/upload/v1542363182/pescetarian.png",
+          "name": "Pescetarians Diet",
+          "description": "Pescetarian diet adalah adalah pola makan orang yang tidak mengonsumsi daging namun masih makan ikan dan sajian laut lainnya. Jadi, berbeda dengan vegetarian yang pantang makan semua jenis produk hewan.",
+          "totalCal": "133",
+          "harga": 30000
+        }
+      },
+      "diet-gfcf": {
         "0": {
           "pic": "https://dkpzhs366ovzp.cloudfront.net/media_root/filer_public/2017/10/04/untitled-273.jpg",
           "name": "Sup ayam",
@@ -64,7 +115,7 @@
           "status": "available"
         }
       },
-      "diabetes": {
+      "diet-keto": {
         "0": {
           "pic": "https://img-global.cpcdn.com/003_recipes/2d45de3e00d89580/751x532cq70/photo.jpg",
           "name": "Mash Potatoes",
@@ -106,7 +157,7 @@
           "status": "available"
         }
       },
-      "hipertensi": {
+      "diet-low-fat": {
         "0": {
           "pic": "https://img-global.cpcdn.com/003_recipes/657a7f586e75d47f/260x366cq50/photo.jpg",
           "name": "Shirataki Goreng (FREE MSG)",
@@ -140,37 +191,256 @@
           "status": "available"
         }
       },
-      "gagal-ginjal": {
+      "diet-carbo": {
         "0": {
-          "pic": "https://img-global.cpcdn.com/003_recipes/657a7f586e75d47f/260x366cq50/photo.jpg",
-          "name": "Shirataki Goreng (FREE MSG)",
-          "description": "Shirataki sendiri makin populer saat berbagai diet yang melarang konsumsi karbohidrat, gula, dan gluten menjamur. Makanan ini mengandung air hampir 97% dan 3% serat. Manfaatnya mulai dari membantu mengontrol konsumsi gula untuk pengidap diabetes, membantu mengontrol tekanan darah, meningkatkan fungsi metabolisme, mempercantik kulit, dan tentunya menurunkan berat badan.",
-          "totalCal": "50",
-          "harga": 30000,
-          "status": "available"
+          "pic": "https://dkpzhs366ovzp.cloudfront.net/media_root/filer_public/2017/10/04/untitled-273.jpg",
+          "name": "Sup ayam",
+          "description": "Nilai gizi per porsi:, Energi: 133 Kal, Protein: 3,4 g, Lemak: 1,5 g, Karbohidrat: 25,5 g",
+          "totalCal": "133",
+          "harga": 30000
         },
         "1": {
-          "pic": "https://img-global.cpcdn.com/003_recipes/e7c924ec12ad0cdb/751x532cq70/photo.jpg",
-          "name": "Nasi Goreng Jamur Enoki",
-          "description": "",
-          "totalCal": "50",
-          "harga": 30000,
-          "status": "available"
+          "pic": "https://selerasa.com/wp-content/uploads/2015/06/images_nasi_nasi_tim_resep-nasi-tim-ayam.jpg",
+          "name": "Nasi tim ayam",
+          "description": "Nilai gizi per porsi:, Energi: 287 Kkal, Protein: 20, g, Lemak: 14,3 g, Karbohidrat: 13,2 g",
+          "totalCal": "287",
+          "harga": 30000
         },
         "2": {
-          "pic": "https://img-global.cpcdn.com/003_recipes/d521f286cae74941/751x532cq70/photo.jpg",
-          "name": "Tumis Bokchoy-Jamur ",
-          "description": "",
+          "pic": "https://img-global.cpcdn.com/003_recipes/9c9647982a556d0d/751x532cq70/photo.jpg",
+          "name": "Nasi beras merah & Tumis jamur",
+          "description": "Nilai gizi per porsi:, Energi: 212 Kkal, Protein: 14,4 g, Lemak: 11,5 g, Karbohidrat: 11,0",
+          "totalCal": "212",
+          "harga": 30000
+        },
+        "3": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/657a7f586e75d47f/260x366cq50/photo.jpg",
+          "name": "Shirataki Goreng",
+          "description": "Makanan ini mengandung air hampir 97% dan 3% serat. ",
           "totalCal": "50",
           "harga": 30000,
           "status": "available"
         },
-        "3": {
-          "pic": "https://img-global.cpcdn.com/003_recipes/f432a439df727514/751x532cq70/photo.jpg",
-          "name": "Sauteed Mushroom ",
-          "description": "",
-          "totalCal": "50",
+        "4": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/602d0cdb4f7e3391/751x532cq70/photo.jpg",
+          "name": "Sup Bihun Jamur",
+          "description": "Makanan sumber karbohidrat yang tidak mengandung gluten misalnya beras, singkong, ubi, talas, jagung, tepung beras, tapioca, ararut, maizena, bihun, soun, dsb",
+          "totalCal": "135",
+          "harga": 30000,
+          "status": "available"
+        },
+        "5": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/ba41b9f5acef10ca/751x532cq70/photo.jpg",
+          "name": "Tiwul Goreng",
+          "description": "Tiwul mengandung kalori yang lebih rendah dibandingkan beras, namun cukup memenuhi kebutuhan tubuh.",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        },
+        "6": {
+          "pic": "https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/4e781844-1597-4f7c-8f02-a1aa7dea6163.jpg",
+          "name": "Ayam saus inggris",
+          "description": "Mengandung karbohidrat, kalsium, protein, zat besi dan vitamin C, sehingga banyak manfaatnya. ",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        },
+        "7": {
+          "pic": "https://selerasa.com/wp-content/uploads/2015/11/images_sayuran_Resep-tumis-kailan-daging-cincang.jpg",
+          "name": "Nasi beras merah + Cah sapi kalian muda",
+          "description": "Mengandung karbohidrat, kalsium, protein, zat besi dan vitamin C, sehingga banyak manfaatnya. ",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        }
+      },
+      "diet-vegan": {
+        "0": {
+          "pic": "https://dkpzhs366ovzp.cloudfront.net/media_root/filer_public/2017/10/04/untitled-273.jpg",
+          "name": "Sup ayam",
+          "description": "Nilai gizi per porsi:, Energi: 133 Kal, Protein: 3,4 g, Lemak: 1,5 g, Karbohidrat: 25,5 g",
+          "totalCal": "133",
           "harga": 30000
+        },
+        "1": {
+          "pic": "https://selerasa.com/wp-content/uploads/2015/06/images_nasi_nasi_tim_resep-nasi-tim-ayam.jpg",
+          "name": "Nasi tim ayam",
+          "description": "Nilai gizi per porsi:, Energi: 287 Kkal, Protein: 20, g, Lemak: 14,3 g, Karbohidrat: 13,2 g",
+          "totalCal": "287",
+          "harga": 30000
+        },
+        "2": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/9c9647982a556d0d/751x532cq70/photo.jpg",
+          "name": "Nasi beras merah & Tumis jamur",
+          "description": "Nilai gizi per porsi:, Energi: 212 Kkal, Protein: 14,4 g, Lemak: 11,5 g, Karbohidrat: 11,0",
+          "totalCal": "212",
+          "harga": 30000
+        },
+        "3": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/657a7f586e75d47f/260x366cq50/photo.jpg",
+          "name": "Shirataki Goreng",
+          "description": "Makanan ini mengandung air hampir 97% dan 3% serat. ",
+          "totalCal": "50",
+          "harga": 30000,
+          "status": "available"
+        },
+        "4": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/602d0cdb4f7e3391/751x532cq70/photo.jpg",
+          "name": "Sup Bihun Jamur",
+          "description": "Makanan sumber karbohidrat yang tidak mengandung gluten misalnya beras, singkong, ubi, talas, jagung, tepung beras, tapioca, ararut, maizena, bihun, soun, dsb",
+          "totalCal": "135",
+          "harga": 30000,
+          "status": "available"
+        },
+        "5": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/ba41b9f5acef10ca/751x532cq70/photo.jpg",
+          "name": "Tiwul Goreng",
+          "description": "Tiwul mengandung kalori yang lebih rendah dibandingkan beras, namun cukup memenuhi kebutuhan tubuh.",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        },
+        "6": {
+          "pic": "https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/4e781844-1597-4f7c-8f02-a1aa7dea6163.jpg",
+          "name": "Ayam saus inggris",
+          "description": "Mengandung karbohidrat, kalsium, protein, zat besi dan vitamin C, sehingga banyak manfaatnya. ",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        },
+        "7": {
+          "pic": "https://selerasa.com/wp-content/uploads/2015/11/images_sayuran_Resep-tumis-kailan-daging-cincang.jpg",
+          "name": "Nasi beras merah + Cah sapi kalian muda",
+          "description": "Mengandung karbohidrat, kalsium, protein, zat besi dan vitamin C, sehingga banyak manfaatnya. ",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        }
+      },
+      "diet-pescetarian": {
+        "0": {
+          "pic": "https://dkpzhs366ovzp.cloudfront.net/media_root/filer_public/2017/10/04/untitled-273.jpg",
+          "name": "Sup ayam",
+          "description": "Nilai gizi per porsi:, Energi: 133 Kal, Protein: 3,4 g, Lemak: 1,5 g, Karbohidrat: 25,5 g",
+          "totalCal": "133",
+          "harga": 30000
+        },
+        "1": {
+          "pic": "https://selerasa.com/wp-content/uploads/2015/06/images_nasi_nasi_tim_resep-nasi-tim-ayam.jpg",
+          "name": "Nasi tim ayam",
+          "description": "Nilai gizi per porsi:, Energi: 287 Kkal, Protein: 20, g, Lemak: 14,3 g, Karbohidrat: 13,2 g",
+          "totalCal": "287",
+          "harga": 30000
+        },
+        "2": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/9c9647982a556d0d/751x532cq70/photo.jpg",
+          "name": "Nasi beras merah & Tumis jamur",
+          "description": "Nilai gizi per porsi:, Energi: 212 Kkal, Protein: 14,4 g, Lemak: 11,5 g, Karbohidrat: 11,0",
+          "totalCal": "212",
+          "harga": 30000
+        },
+        "3": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/657a7f586e75d47f/260x366cq50/photo.jpg",
+          "name": "Shirataki Goreng",
+          "description": "Makanan ini mengandung air hampir 97% dan 3% serat. ",
+          "totalCal": "50",
+          "harga": 30000,
+          "status": "available"
+        },
+        "4": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/602d0cdb4f7e3391/751x532cq70/photo.jpg",
+          "name": "Sup Bihun Jamur",
+          "description": "Makanan sumber karbohidrat yang tidak mengandung gluten misalnya beras, singkong, ubi, talas, jagung, tepung beras, tapioca, ararut, maizena, bihun, soun, dsb",
+          "totalCal": "135",
+          "harga": 30000,
+          "status": "available"
+        },
+        "5": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/ba41b9f5acef10ca/751x532cq70/photo.jpg",
+          "name": "Tiwul Goreng",
+          "description": "Tiwul mengandung kalori yang lebih rendah dibandingkan beras, namun cukup memenuhi kebutuhan tubuh.",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        },
+        "6": {
+          "pic": "https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/4e781844-1597-4f7c-8f02-a1aa7dea6163.jpg",
+          "name": "Ayam saus inggris",
+          "description": "Mengandung karbohidrat, kalsium, protein, zat besi dan vitamin C, sehingga banyak manfaatnya. ",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        },
+        "7": {
+          "pic": "https://selerasa.com/wp-content/uploads/2015/11/images_sayuran_Resep-tumis-kailan-daging-cincang.jpg",
+          "name": "Nasi beras merah + Cah sapi kalian muda",
+          "description": "Mengandung karbohidrat, kalsium, protein, zat besi dan vitamin C, sehingga banyak manfaatnya. ",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        }
+      },
+      "diet-paleo": {
+        "0": {
+          "pic": "https://dkpzhs366ovzp.cloudfront.net/media_root/filer_public/2017/10/04/untitled-273.jpg",
+          "name": "Sup ayam",
+          "description": "Nilai gizi per porsi:, Energi: 133 Kal, Protein: 3,4 g, Lemak: 1,5 g, Karbohidrat: 25,5 g",
+          "totalCal": "133",
+          "harga": 30000
+        },
+        "1": {
+          "pic": "https://selerasa.com/wp-content/uploads/2015/06/images_nasi_nasi_tim_resep-nasi-tim-ayam.jpg",
+          "name": "Nasi tim ayam",
+          "description": "Nilai gizi per porsi:, Energi: 287 Kkal, Protein: 20, g, Lemak: 14,3 g, Karbohidrat: 13,2 g",
+          "totalCal": "287",
+          "harga": 30000
+        },
+        "2": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/9c9647982a556d0d/751x532cq70/photo.jpg",
+          "name": "Nasi beras merah & Tumis jamur",
+          "description": "Nilai gizi per porsi:, Energi: 212 Kkal, Protein: 14,4 g, Lemak: 11,5 g, Karbohidrat: 11,0",
+          "totalCal": "212",
+          "harga": 30000
+        },
+        "3": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/657a7f586e75d47f/260x366cq50/photo.jpg",
+          "name": "Shirataki Goreng",
+          "description": "Makanan ini mengandung air hampir 97% dan 3% serat. ",
+          "totalCal": "50",
+          "harga": 30000,
+          "status": "available"
+        },
+        "4": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/602d0cdb4f7e3391/751x532cq70/photo.jpg",
+          "name": "Sup Bihun Jamur",
+          "description": "Makanan sumber karbohidrat yang tidak mengandung gluten misalnya beras, singkong, ubi, talas, jagung, tepung beras, tapioca, ararut, maizena, bihun, soun, dsb",
+          "totalCal": "135",
+          "harga": 30000,
+          "status": "available"
+        },
+        "5": {
+          "pic": "https://img-global.cpcdn.com/003_recipes/ba41b9f5acef10ca/751x532cq70/photo.jpg",
+          "name": "Tiwul Goreng",
+          "description": "Tiwul mengandung kalori yang lebih rendah dibandingkan beras, namun cukup memenuhi kebutuhan tubuh.",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        },
+        "6": {
+          "pic": "https://scm-assets.constant.co/scm/unilever/a6798e909fa57bfd19c3e7f00737e5d6/4e781844-1597-4f7c-8f02-a1aa7dea6163.jpg",
+          "name": "Ayam saus inggris",
+          "description": "Mengandung karbohidrat, kalsium, protein, zat besi dan vitamin C, sehingga banyak manfaatnya. ",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
+        },
+        "7": {
+          "pic": "https://selerasa.com/wp-content/uploads/2015/11/images_sayuran_Resep-tumis-kailan-daging-cincang.jpg",
+          "name": "Nasi beras merah + Cah sapi kalian muda",
+          "description": "Mengandung karbohidrat, kalsium, protein, zat besi dan vitamin C, sehingga banyak manfaatnya. ",
+          "totalCal": "435",
+          "harga": 30000,
+          "status": "available"
         }
       }
     },

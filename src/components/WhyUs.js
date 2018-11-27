@@ -6,25 +6,27 @@ class WhyUs extends Component {
             <div className="whyus">
                 <div className="col">
                         <div className="item1">
-                            <h2 className="titleText">Kenapa Harus Berlangganan</h2>
+                            <h2 className="titleText">Cara Kerja</h2>
                         </div>
                 </div>
-                <div className="col">
-                    <div className="item1">
-                    <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541549052/wallet.png" alt="diabetes" width="48px" height="100%"/>
-                        <p className="keterangan">Harga Terjangkau</p>
+                <div className="content">
+                    <div className="col">
+                        <div className="item1">
+                        <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1543328961/qr-code_1.png" alt="diabetes" width="100px" height="100%"/>
+                            <p className="keterangan">Scan QRCode yang ada di Menu</p>
+                        </div>
                     </div>
-                </div>
-                <div className="col">
-                    <div className="item1">
-                    <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541549052/protection.png" alt="diabetes" width="48px" height="100%"/>
-                        <p className="keterangan">Memiliki Quality Sistem Jaminan Mutu Terpadu dan Keamanan Pangan</p>
+                    <div className="col">
+                        <div className="item1">
+                        <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1543328961/nutrition.png" alt="diabetes" width="100px" height="100%"/>
+                            <p className="keterangan">Lihat Informasi Nutrition fact yang ada di Menu</p>
+                        </div>
                     </div>
-                </div>
-                <div className="col">
-                    <div className="item1">
-                    <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541549052/nutritionist.png" alt="diabetes" width="48px" height="100%"/>
-                        <p className="keterangan">Direkomendasikan oleh ahli gizi</p>
+                    <div className="col">
+                        <div className="item1">
+                        <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541549052/nutritionist.png" alt="diabetes" width="100px" height="100%"/>
+                            <p className="keterangan">Sesuaikan menu yang ada dengan kebutuhan diet anda</p>
+                        </div>
                     </div>
                 </div>
             </div>

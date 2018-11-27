@@ -1,5 +1,8 @@
 export const FETCH_DATA = "FETCH_DATA"
 export const ADD_ORDER = "ADD_ORDER"
+export const DETAIL_PRODUK = "DETAIL_PRODUK"
+export const DETAIL_DIET = "DETAIL_DIET"
+export const FETCH_MENU = "FETCH_MENU"
 
 export function itemsHasErrored(bool) {
     return {
@@ -49,9 +52,24 @@ export function JSONData(data) {
     };
 }
 
+
 export function addOrder(order) {
     return {
         type: ADD_ORDER,
         order
+    };
+}
+
+export function detailProduk(detail) {
+    return {
+        type: DETAIL_PRODUK,
+        detail
+    };
+}
+
+export function detailDiet(detail) {
+    return {
+        type: DETAIL_DIET,
+        detail
     };
 }

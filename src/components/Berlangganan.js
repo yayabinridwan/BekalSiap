@@ -6,7 +6,7 @@ class Berlangganan extends Component {
     render() {
         return (
             <div className="flex-box">
-                <h2 className="col2">Mulai Berlangganan</h2>
+                <h2 className="col2">Paket Nutrition Coaching</h2>
                 <div className="col2">
                     <DiabetesMenu />
                 </div>

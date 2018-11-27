@@ -10,7 +10,8 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {Link } from 'react-router-dom'
 import {connect} from 'react-redux'
-import {addOrder} from '../js/actions/index'
+import {detailProduk} from '../js/actions/index'
+
 
 const styles = {
   card: {
@@ -38,24 +39,18 @@ function ImgMediaCard(props) {
           title={name}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h6" component="h2">
             {name}
           </Typography>
           <Typography component="p">
-            {description}
+            {description.slice(0, 50) + `-`}
           </Typography>
           <hr />
-          <Typography component="p">
-            Rp. {harga.toLocaleString()}
-          </Typography>
-          <Typography component="p">
-            available
-          </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
       <Link to={{pathname: '/nutrition'}}>
-        <Button size="small" color="primary" onClick={() => props.addOrder(props.details)}>
+        <Button className="buttonAction" size="small" color="primary" onClick={() => props.detailProduk(props.details)}>
           Lihat Detail
         </Button>
       </Link>
@@ -68,10 +63,5 @@ ImgMediaCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = (state) => {
-  return {
-      data: state.data,
-  };
-};
 
-export default connect(mapStateToProps, {addOrder})(withStyles(styles)(ImgMediaCard));
+export default connect(null, {detailProduk})(withStyles(styles)(ImgMediaCard));

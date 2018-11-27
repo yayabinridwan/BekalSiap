@@ -1,11 +1,20 @@
 body
-  background-color #f9f9f9
-  overflow-x: hidden
+  background-color #efefef
   font-family: 'Roboto', sans-serif
 
 #promo
   margin-top: 60px
   background-color: white
+
+.menu
+ margin-top: 10px
+ color: #851480
+ text-align: center
+
+.diet
+  margin-top: 10px
+  display: flex
+  justify-content: centerf
 
 .promo
   margin-top: 5px
@@ -13,19 +22,13 @@ body
 .appBar
   width: 100%
   display: flex
-  justify-content: space-around
-
-.col3
-  width: 50%
-  flex-grow: 1
-  margin-right: auto
 
 .col4
-  width: 40%
-  flex-grow:  1
-  margin-left: 200px
   margin-right: 0
+  color: #851480
 
+.buttonAction
+  color: #851480
 
 .langganan
   margin-bottom: 60px
@@ -44,13 +47,15 @@ body
   background-color: white
   margin-bottom: 20px
 
+.text
+  text-align: center
+
 .copyright
   text-align: center
 
 .tentangkami
   width: 100%
   height: 100%
-  padding: 10px
   padding-top: 30px
   padding-bottom: 20px
   display: block
@@ -59,6 +64,7 @@ body
   text-align: center
   background: white
   color: #851480
+
 
 .Footer 
   padding: 10px
@@ -71,12 +77,20 @@ body
 .whyus
   height: 100%
   display: block
+  grid-template-columns: repeat(3, 1fr)
   background-color: white
   align-items: center
   padding: 20px
   justify-content: space-between
   margin-bottom: 20px
+  margin-top: 10px
 
+
+.redirects
+  text-align: center
+  justify-content: center
+  align-items: center
+  
 .menuItem
   width: 40px
   height 100%
@@ -101,14 +115,18 @@ body
   margin-top: 2rem
   width: 100%
   height: 30%
+  text-align: center
+  color: #851480
+  background-color: white
+  padding-top: 20px
 
 .flex-box
   display: block
   height: 100%
   padding: 5px
   width: 100%
-  background: rgb(255,205,0)
-  background: linear-gradient(146deg, rgba(255,205,0,1) 0%, rgba(255,72,0,1) 100%)
+  background: rgb(255,71,73);
+  background: linear-gradient(180deg, rgba(255,71,73,1) 0%, rgba(252,72,113,1) 98%); 
   justify-content: space-between
 
 .cart
@@ -142,4 +160,85 @@ a
   list-style none
   place-items stretch stretch
   justify-content: center
+
+
+.listCard 
+  display: inline-block
+  justify-content: center
+  align-items: center
+  padding: 5px
+  box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2)
+  transition: 0.3s
+  border-radius: 5px
+  margin-top: 20px
+  border-color: #851480
+  border-style: solid
+  border-width: thin
+
+.dietOption
+  background-color: white
+  margin-top: 30px
+  padding: 20px
   
+h2
+ text-align: center
+ color: #851480
+
+.row1
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(3, 1fr)
+
+.avatar
+  width: 100%
+  height: 150px
+
+button 
+  background-color: #851480
+  border-style: none
+  padding: 5px
+  color: white
+
+.qrCode
+  margin-top: 50px
+  display: block
+  grid-template-columns: 1fr
+  grid-template-rows: 1fr 1fr
+  justify-content: center
+  align-items: center
+  height: 100%
+  padding: 20px
+  text-align: center
+  background-color: #f2ca02
+  color white
+
+.Rekomendasi
+  background-color: #851480
+  padding 20px
+  margin-bottom: 10px
+  width: 100%
+  box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2)
+  border-radius: 5px
+
+.qrcode
+  width: 100%
+  display: flex
+  justify-content: center
+
+.cari
+  background-color: #f2ca02
+
+.content
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+  justify-content: center
+
+.col8
+  display: grid
+  grid-gap: 20px
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  justify-content: center
+
+.RestoPage
+  margin-top: 60px
+  margin-bottom: 50px

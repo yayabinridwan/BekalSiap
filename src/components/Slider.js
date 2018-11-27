@@ -8,23 +8,22 @@ export default class SimpleSlider extends Component {
     const settings = {
       dots: true,
       infinite: true,
+      speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
-      speed: 2000,
-      autoplaySpeed: 3000,
-      cssEase: "linear",
-      arrows: true
+      autoplay: true,
+      lazyLoad: true,
+      centerMode: true,
+      adaptiveHeight: true,
+      fade: true,
+      arrows: true,
+      autoplaySpeed: 5000,
     };
     return (
       <div>
         <Slider {...settings}>
-          <div>
-            <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541323958/cover.png" alt="cover" height="200px" widht="100%"/>
-          </div>
-          <div>
-            <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541324485/rect1537.png" alt="discount" height="200px" widht="100%"/>
-          </div>
+          <div>1</div>
+          <div>2</div>
         </Slider>
       </div>
     );

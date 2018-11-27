@@ -29,6 +29,7 @@ class SimpleBottomNavigation extends React.Component {
   render() {
     const { classes } = this.props;
     const { value } = this.state;
+    
 
     return (
       <BottomNavigation
@@ -39,7 +40,7 @@ class SimpleBottomNavigation extends React.Component {
       >
         <BottomNavigationAction component={Link} to="/" label="Home" icon={<HomeIcon />} />
         <BottomNavigationAction component={Link} to="/order"label="Cart" icon={<ShoppingCartIcon/>} />
-        <BottomNavigationAction component={Link} to="/"label="Kontak" icon={<PhoneIcon />} />
+        <BottomNavigationAction component={Link} to="/redirect" label="Kontak" icon={<PhoneIcon />} />
       </BottomNavigation>
     );
   }

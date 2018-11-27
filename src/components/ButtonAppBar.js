@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
+import Drawer from './Drawer';
 
 const theme = createMuiTheme({
   palette: {
@@ -40,23 +41,37 @@ const styles = {
 };
 
 
-function ButtonAppBar(props) {
-  const { classes } = props;
-  return (
-    <div className={classes.root} >
-      <MuiThemeProvider theme={theme}>
-        <AppBar position="static" color="primary">
-          <Toolbar>
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
-              <MenuIcon />
-            </IconButton>
-            <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541400100/g1069.png" alt="logo" width="200px" height="80%" className={classes.flexQ}/>
-            <Button color="inherit" >Cart</Button>
-          </Toolbar>
-        </AppBar>
-      </MuiThemeProvider>
-    </div>
-  );
+
+class ButtonAppBar extends Component {
+  state = {
+    left: false,
+  };
+
+  toggleDrawer = (side, open) => () => {
+    this.setState({
+      [side]: open,
+    });
+  };
+
+  render() {
+    const { classes } = this.props;
+    return (
+      <div className={classes.root}>
+        <MuiThemeProvider theme={theme}>
+          <AppBar position="static" color="primary">
+            <Toolbar>
+              <IconButton onClick={this.toggleDrawer('left', true)}  className={classes.menuButton} color="inherit" aria-label="Menu">
+                <MenuIcon />
+              </IconButton>
+              <img src="https://res.cloudinary.com/bekalsiap/image/upload/v1541400100/g1069.png" alt="logo" width="200px" height="80%" className={classes.flexQ}/>
+              <Button color="inherit" ></Button>
+            </Toolbar>
+            <Drawer open={this.state.left} toggleDrawer={this.toggleDrawer}/>
+          </AppBar>
+        </MuiThemeProvider>
+      </div>
+    );
+  }
 }
 
 ButtonAppBar.propTypes = {

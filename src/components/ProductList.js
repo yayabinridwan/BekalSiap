@@ -3,35 +3,31 @@ import { connect } from 'react-redux';
 import { JSONData } from '../js/actions/index';
 import ButtonAppBar from './ButtonAppBar'
 import SimpleSlider from './Slider'
-import NestedGrid from './NestedGrid'
 import WhyUs from './WhyUs'
 import TentangKami from './TentangKami'
 import Footer from './Footer'
-import AutismeMenu from './AutismeMenu'
 import Berlangganan from './Berlangganan'
 import SimpleBottomNavigation from './SimpleBottomNavigation'
-
+import List from './List'
+import Qrcode from './Qrcode'
 
 class ItemList extends Component {
     componentDidMount() {
         this.props.fetchData('sucess');
     }
-
+    
     render() {
+          
         return (
-            <div>
-                <ButtonAppBar />
-                <div id="promo">
-                     <SimpleSlider />
-                </div>
-                <NestedGrid />
-                <AutismeMenu />
+            <div className="application">
+                <ButtonAppBar /> 
+                <Qrcode />    
                 <WhyUs />
-                <Berlangganan />
+                <List />
                 <TentangKami />
                 <Footer />
                 <SimpleBottomNavigation />
-            </div>
+            </div> 
         );
     }
 }
@@ -53,7 +49,21 @@ export default connect(mapStateToProps, mapDispatchToProps)(ItemList);
 
 
 /*
+ <
   <OrderPage />
+   <ButtonAppBar />
+              
+ <ButtonAppBar />
+                <div id="promo">
+                     <SimpleSlider />
+                </div>
+                <NestedGrid />
+                <AutismeMenu />
+                <WhyUs />
+                <Berlangganan />
+                <TentangKami />
+                <Footer />
+                <SimpleBottomNavigation />
   
 import React from 'react'
 import Inventory from './Inventory';
